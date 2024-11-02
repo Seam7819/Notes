@@ -16,10 +16,16 @@
 
     <h1 class="text-3xl md:text-4xl lg:text-6xl text-center underline m-10">Note Book</h1>
     <div class="flex flex-col gap-10 m-20">
-        <textarea name=""  cols="150" rows="5" id="" placeholder="Right Here"></textarea>
+        <textarea name="" class="rounded-2xl p-3" cols="150" rows="5" id="input-field" placeholder="Write Here"></textarea>
         <div class="flex justify-center">
-            <button class="btn btn-outline btn-success w-2/3  lg:w-1/4">Note It</button>
+            <button onclick="handleBtn()" class="btn btn-outline btn-success w-2/3  lg:w-1/4">Note It</button>
         </div>
+    </div>
+
+    <div>
+        <ol  type="1" class="mx-20" id="display-container">
+
+        </ol>
     </div>
 
     <script src="notes.js"></script>
